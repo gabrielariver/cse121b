@@ -23,16 +23,15 @@ imgElement.setAttribute('width', "225px");
 imgElement.setAttribute('height', "300px");
 
 /* Step 5 - Array */
-const foodArray = ["Scrambled eggs", "Mashed potatoes", "Meatballs", "Stew", "Roast beef", "Soup"];
-foodElement.innerHTML = foodArray.join(', ');
-const anotherFavFood = "Salad"; 
-foodArray.push(anotherFavFood);
-foodElement.innerHTML += '<br>' + foodArray.join(', ');
-foodArray.shift();
-foodElement.innerHTML += '<br>' + foodArray.join(', ');
-foodArray.pop();
-foodElement.innerHTML += '<br>' + foodArray.join(', ');
-
+const favFood = ["Scrambled eggs", "Mashed potatoes", "Meatballs", "Stew", "Roast beef", "Soup"];
+foodElement.innerHTML = favFood.join(', ');
+const anotherFavFood = "Rice"; 
+favFood.push(anotherFavFood);
+foodElement.innerHTML += `<br>${favFood.join(', ')}`;
+favFood.shift();
+foodElement.innerHTML += `<br>${favFood.join(', ')}`;
+favFood.pop();
+foodElement.innerHTML += `<br>${favFood.join(', ')}`;
 
 
 
